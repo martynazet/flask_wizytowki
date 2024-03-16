@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        {% block head %}
+        <meta charset="utf-8">
+        <title>Moja wizytówka</title>
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        {% endblock %}
+    </head>
+    <body>
+        <h1><b>Witaj na mojej stronie domowej</b></h1>
+        <img src="https://www.shutterstock.com/image-vector/realistic-sketch-basketball-ball-vector-600nw-2191811097.jpg" height=150 width =150 alt="basketball" title="basket">
+        <div id="content">{% block content %}{% endblock %}</div>
+    </body>
+</html>
